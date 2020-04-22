@@ -1,7 +1,8 @@
 const fs = require("fs");
+const initialPath = process.argv[2] || __dirname;
 
 function traceDirTree() {
-  let stack = [__dirname];
+  let stack = [initialPath];
 
   let result = "";
 
